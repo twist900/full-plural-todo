@@ -9,21 +9,13 @@ import {
 
 import TaskList from './TaskList';
 import TaskForm from './TaskForm';
+import store from './todoStore';
 
 export default class PluralTodo extends React.Component {
   constructor(props){
     super(props);
 
-    this.state = {
-      todos: [
-        {
-          task: 'Learn React Native'
-        },
-        {
-          task: 'Learn Redux'
-        }
-      ]
-    }
+    this.state = store.getState();
   }
 
   onPressStarted(){

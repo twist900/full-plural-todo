@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "15.2.1",
     "react-native": "0.31.0",
-    "react-native-swipeout": "2.0.12"
+    "react-native-swipeout": "2.0.12",
+    "redux": "^3.5.2"
   }
 }
